@@ -1,0 +1,37 @@
+<!-- Admin Payment Section (Visible only when admin is logged in) -->
+<section class="admin-payment-section" id="adminPaymentSection" style="display: none;">
+    <div class="container">
+        <h2>Payment Configuration</h2>
+        <div class="payment-methods">
+            <h3>Active Payment Methods</h3>
+            <div id="activeMethods"></div>
+            
+            <h3>Add New Payment Method</h3>
+            <form id="paymentMethodForm">
+                <div class="form-group">
+                    <label>Method Name:</label>
+                    <input type="text" id="methodName" required>
+                </div>
+                <div class="form-group">
+                    <label>Account Details:</label>
+                    <textarea id="methodDetails" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Logo URL:</label>
+                    <input type="url" id="methodLogo">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Method</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Client Deposit Section -->
+<section class="deposit-section">
+    <div class="container">
+        <h2>Fund Your Account</h2>
+        <div class="payment-options" id="paymentOptions">
+            <!-- Payment methods will be loaded here -->
+        </div>
+    </div>
+</section>
